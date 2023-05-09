@@ -2,7 +2,7 @@ let addtodobutton = document.getElementById('addtodo');
 let todocontainer = document.getElementById('todocontainer');
 let inputfield = document.getElementById('inputfield');
 let btnClearlist = document.querySelector('button');
-let inputs = document.querySelectorAll('p');
+let paragraph = document.querySelectorAll('p');
 
 addtodobutton.addEventListener('click', function(){
     var paragraph = document.createElement('p')
@@ -14,7 +14,7 @@ addtodobutton.addEventListener('click', function(){
         paragraph.style.textDecoration = "line-through";
     })
     btnClearlist.addEventListener('click', () => {
-        inputs.forEach(input => input.value = 'p');
+        paragraph.forEach(input => input.value = '');
     });
 
 });
