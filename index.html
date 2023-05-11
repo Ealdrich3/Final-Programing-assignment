@@ -10,8 +10,12 @@
 <body>
 	|<h1> To-do List </h1>
     <div class="conatiner">
-        <input id="inputfield" type="text"><button id="addtodo">Submit</button>
-        <button>Clear List</button>
+        <div id="newtask">
+            <input type="text" placeholder="Add Tasks">
+            <button id="push">Submit</button>
+            <button id="empty">clear list</button>
+        </div>
+        <div id="tasks"></div>
         <div class="to-dos" id="todocontainer"> 
         </div>
     </div>
